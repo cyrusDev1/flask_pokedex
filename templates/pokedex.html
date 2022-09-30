@@ -11,17 +11,8 @@
     </style>
 </head>
 <body>
-    {% for pk in pokemons %}
     <div>
-        <div>
-            <a href="pokedex/{{ pk.id }}"><img src="{{ pk.sprites.front_default }}" alt=""></a>
-        </div>
+        {{ one_pokemon }}
     </div>
-    {{ pk.id }} <br>
-    {{ pk.name }}
-        {% for type in pk.types %}
-            <b>{{ type.type.name }}</b>
-        {% endfor %}
-   {% endfor %}
 </body>
 </html>
