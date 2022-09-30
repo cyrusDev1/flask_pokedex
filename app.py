@@ -11,5 +11,3 @@ ls = LiveServer(app)
 def home():
     pokemons = asyncio.run(all_pokemon())
     return ls.render_template('index.html', pokemons=pokemons)
-
-
